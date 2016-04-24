@@ -77,14 +77,14 @@ font-family: 'Raleway', sans-serif;
 #bqstart
 {
   
-margin-top: 11em;
+margin-top: 14em;
  font-family: 'Lato', sans-serif;
- font-size: 4em;
+ font-size: 3em;
  line-height: 1.8em;
     position: absolute;
     margin-left: auto;
     margin-right:auto;
-    width:60%;
+    width:70%;
     padding-left: 35%;
     padding-right: 25%;
    
@@ -96,6 +96,32 @@ margin-top: 11em;
      word-spacing: 5px;
 
 }
+
+
+#bqstart1
+{
+  
+margin-top: 18.5em;
+ font-family: 'Lato', sans-serif;
+ font-size: 2.5em;
+ line-height: 1.8em;
+    position: absolute;
+    margin-left: auto;
+    margin-right:auto;
+    width:70%;
+    padding-left: 35%;
+    padding-right: 25%;
+   
+   text-align: left;
+    
+    font-weight: thin;
+    color: black;
+    letter-spacing: 2px;
+     word-spacing: 5px;
+
+}
+
+
 
 
 
@@ -332,6 +358,9 @@ position:static;
        margin-bottom: 10em;
         max-width: 85%;
           height: 650px;
+     @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
        
         }
 .section-3
@@ -451,6 +480,26 @@ img.desaturate {
 }
 img.desaturate:hover { -webkit-filter: grayscale(1%); filter: grayscale(0%); transition-duration: .8s; 
 
+}
+
+
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+ 
+	-webkit-animation-duration:2s;
+	-moz-animation-duration:2s;
+	animation-duration:2s;
 }
 
 

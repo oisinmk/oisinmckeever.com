@@ -9,6 +9,9 @@
    v1.1 2005-06-16 wrap it up in an object
 */
 
+function fadeIn(obj) {
+    $(obj).fadeIn(1000);
+}
 var ss = {
   fixAllLinks: function() {
     // Get a list of all links in the page
